@@ -40,9 +40,6 @@ public class Payroll {
 		//Display the result in a dialogue box
 		JOptionPane.showMessageDialog(null, outputString);
 		
-		//Display results in console
-		System.out.println(outputString);
-		
 	}
 	
 	public static String getInput(String message){
