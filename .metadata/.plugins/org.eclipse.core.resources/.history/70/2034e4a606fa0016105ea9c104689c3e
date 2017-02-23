@@ -28,13 +28,13 @@ public class Payroll {
 		// Generate output
 		String outputString = "Employee Name: " + employeeName + "\n";
 		outputString += "\nHours Worked: " + hoursWorkedString + "\n";
-		outputString += "Pay Rate $" + hourlyRateString + "\n";
-		outputString += "Gross Pay: $" + grossPay.toString() + "\n";
+		outputString += "Pay Rate " + hourlyRateString + "\n";
+		outputString += "Gross Pay: " + grossPay.toString() + "\n";
 		outputString += "Deductions:\n";
-		outputString += "  Federal Withholding: (" + (fedTaxRate * 100) + "%): $" + fedTax.toString() + "\n";
-		outputString += "  State Withhoding: (" + (stateTaxRate * 100) + "%): $" + stateTax.toString() + "\n";
+		outputString += "  Federal Withholding: (" + (fedTaxRate * 100) + "%): " + fedTax.toString() + "\n";
+		outputString += "  State Withhoding: (" + (stateTaxRate * 100) + "%):" + stateTax.toString() + "\n";
 		outputString += "  Total Deductions: " + totalDeductions.toString() + "\n";
-		outputString += "Net Pay : $" + netPay.toString();
+		outputString += "Net Pay : " + netPay.toString();
 		
 		//Display the result in a dialogue box
 		JOptionPane.showMessageDialog(null, outputString);
