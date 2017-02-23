@@ -26,7 +26,8 @@ public class Payroll {
 		Double netPay = grossPay - totalDeductions;
 		
 		// Generate output
-		String outputString += "Employee Name: " + employeeName + "\n";
+		String outputString = null;
+		outputString += "Employee Name: " + employeeName + "\n";
 		outputString += "\nHours Worked: " + hoursWorkedString + "\n";
 		outputString += "Pay Rate " + hourlyRateString + "\n";
 		outputString += "Gross Pay: " + grossPay.toString() + "\n";
