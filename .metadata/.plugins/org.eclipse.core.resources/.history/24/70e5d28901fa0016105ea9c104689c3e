@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+
+public class Payroll {
+
+	public static void main(String[] args) {
+		
+		String employeeName = getInput("Please enter your full name: ");
+		String hoursWorked = getInput("Please enter the hours worked this week: ");
+		String hourlyRateString = getInput("Please enter your hourly rate: ")
+	}
+	
+	public static String getInput(String message){
+		String input = JOptionPane.showInputDialog(message);
+		return input;
+	}
+
+}

@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+
+public class Payroll {
+
+	public static void main(String[] args) {
+		
+		String employeeName = getInput("Please enter your full name. ");
+		
+	}
+	
+	public static String getInput(String message){
+		String input = JOptionPane.showInputDialog(message);
+		return input;
+	}
+
+}
