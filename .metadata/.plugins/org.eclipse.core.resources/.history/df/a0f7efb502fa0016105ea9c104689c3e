@@ -10,15 +10,13 @@ public class Payroll {
 		String hoursWorkedString = getInput("Please enter the hours worked this week: ");
 		String hourlyRateString = getInput("Please enter your hourly rate in decimal format: ");
 		String fedTaxRateString = getInput("Please enter your Federal Income Tax withholding rate: ");
-		String stateTaxRateString = getInput("Please enter your State Tax withholding rate: ");
+		String stateTaxRate = getInput("Please enter your State Tax withholding rate: ");
 	
 		//parse our strings to a Double data type
 		Double hoursWorked = Double.parseDouble(hoursWorkedString);
 		Double hourlyRate = Double.parseDouble(hourlyRateString);
 		Double fedTaxRate = Double.parseDouble(fedTaxRateString);
-		Double stateTaxRate = Double.parseDouble(stateTaxRateString);
-		
-		//perform calculations
+		Double stateTaxRate = Double.parseDouble(stateTaxRate);
 		
 	}
 	
