@@ -19,11 +19,6 @@ public class Payroll {
 		Double stateTaxRate = Double.parseDouble(stateTaxRateString);
 		
 		//perform calculations
-		Double grossPay = hourlyRate * hoursWorked;
-		Double fedTax = grossPay * fedTaxRate;
-		Double stateTax = grossPay * stateTaxRate;
-		Double totalDeductions = fedTax + stateTax;
-		Double netPay = grossPay - totalDeductions;
 		
 	}
 	
