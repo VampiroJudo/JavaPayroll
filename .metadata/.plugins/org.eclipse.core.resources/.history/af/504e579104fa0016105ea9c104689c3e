@@ -33,8 +33,6 @@ public class Payroll {
 		outputString += "Gross Pay: " + grossPay.toString() + "\n";
 		outputString += "Deductions:\n";
 		outputString += "  Federal Withholding: (" + (fedTaxRate * 100) + "%): " + fedTax.toString() + "\n";
-		outputString += "  State Withhoding: (" + (stateTaxRate * 100) + "%):" + stateTax.toString() + "\n";
-		outputString += "  Total Deductions: " + totalDeductions.toString() + "\n";
 		
 		
 		

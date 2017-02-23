@@ -26,19 +26,6 @@ public class Payroll {
 		Double netPay = grossPay - totalDeductions;
 		
 		// Generate output
-		String outputString = null;
-		outputString += "Employee Name: " + employeeName + "\n";
-		outputString += "\nHours Worked: " + hoursWorkedString + "\n";
-		outputString += "Pay Rate " + hourlyRateString + "\n";
-		outputString += "Gross Pay: " + grossPay.toString() + "\n";
-		outputString += "Deductions:\n";
-		outputString += "  Federal Withholding: (" + (fedTaxRate * 100) + "%): " + fedTax.toString() + "\n";
-		outputString += "  State Withhoding: (" + (stateTaxRate * 100) + "%):" + stateTax.toString() + "\n";
-		outputString += "  Total Deductions: " + totalDeductions.toString() + "\n";
-		
-		
-		
-		
 		
 	}
 	

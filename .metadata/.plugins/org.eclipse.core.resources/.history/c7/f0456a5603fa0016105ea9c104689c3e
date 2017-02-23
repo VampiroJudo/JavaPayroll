@@ -5,40 +5,25 @@ public class Payroll {
 
 	public static void main(String[] args) {
 		
-		// Get user input
+		// get user input
 		String employeeName = getInput("Please enter your full name: ");
 		String hoursWorkedString = getInput("Please enter the hours worked this week: ");
 		String hourlyRateString = getInput("Please enter your hourly rate in decimal format: ");
 		String fedTaxRateString = getInput("Please enter your Federal Income Tax withholding rate: ");
 		String stateTaxRateString = getInput("Please enter your State Tax withholding rate: ");
 	
-		//Parse our strings to a Double data type
+		//parse our strings to a Double data type
 		Double hoursWorked = Double.parseDouble(hoursWorkedString);
 		Double hourlyRate = Double.parseDouble(hourlyRateString);
 		Double fedTaxRate = Double.parseDouble(fedTaxRateString);
 		Double stateTaxRate = Double.parseDouble(stateTaxRateString);
 		
-		//Perform calculations
+		//perform calculations
 		Double grossPay = hourlyRate * hoursWorked;
 		Double fedTax = grossPay * fedTaxRate;
 		Double stateTax = grossPay * stateTaxRate;
 		Double totalDeductions = fedTax + stateTax;
 		Double netPay = grossPay - totalDeductions;
-		
-		// Generate output
-		String outputString = null;
-		outputString += "Employee Name: " + employeeName + "\n";
-		outputString += "\nHours Worked: " + hoursWorkedString + "\n";
-		outputString += "Pay Rate " + hourlyRateString + "\n";
-		outputString += "Gross Pay: " + grossPay.toString() + "\n";
-		outputString += "Deductions:\n";
-		outputString += "  Federal Withholding: (" + (fedTaxRate * 100) + "%): " + fedTax.toString() + "\n";
-		outputString += "  State Withhoding: (" + (stateTaxRate * 100) + "%):" + stateTax.toString() + "\n";
-		outputString += "  Total Deductions: " + totalDeductions.toString() + "\n";
-		
-		
-		
-		
 		
 	}
 	
